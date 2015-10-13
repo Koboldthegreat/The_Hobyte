@@ -1,0 +1,19 @@
+[package]
+
+name = "getting-started-spinning-square"
+version = "0.1.0"
+authors = [
+      "TyOverby <ty@pre-alpha.com>",
+      "Nikita Pekin <contact@nikitapek.in>"
+]
+
+[[bin]]
+name = "spinning-square"
+
+[dependencies]
+piston = "*"
+piston2d-graphics = "*"
+pistoncore-glutin_window = "*"
+piston2d-opengl_graphics = "*"
+find_folder = "*"
+image = "*"

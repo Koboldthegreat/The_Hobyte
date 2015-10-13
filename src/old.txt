@@ -1,0 +1,28 @@
+
+
+
+
+
+
+        if self.collides(){
+            self.player.velocity_x = 0.0;
+            self.player.velocity_y = 0.0;
+        } else {
+            //actions
+
+
+
+
+
+            if self.player.velocity_y < 9.81 * 35.0{
+                self.player.velocity_y += 15.0 * args.dt;
+            }
+
+            if self.player.velocity_x > 0.0{
+                self.player.velocity_x -= 7.0 * args.dt;
+            } else if self.player.velocity_x > -1.0 && self.player.velocity_x < 1.0{
+                self.player.velocity_x = 0.0;
+            } else {
+                self.player.velocity_x += 7.0 * args.dt;
+            }
+        }
